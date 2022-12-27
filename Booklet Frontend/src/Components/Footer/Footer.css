@@ -1,0 +1,23 @@
+.footer{
+    height: 10vh;
+	text-align: center;
+	background: #191919;
+	padding: 20px;
+}
+.footer p{
+	font-size: 15px;
+	color: #cfedf2;
+	letter-spacing: 2px;
+}
+.copy-right{
+    padding: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.copy-right a{
+    text-decoration: none;
+    color: cyan;
+}
+.copy-right a:hover{
+    color: rgb(223, 205, 205);
+}
