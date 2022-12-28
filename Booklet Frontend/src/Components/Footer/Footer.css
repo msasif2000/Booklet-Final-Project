@@ -1,7 +1,7 @@
 .footer{
     height: 10vh;
 	text-align: center;
-	background: #191919;
+	background: #494949;
 	padding: 20px;
 }
 .footer p{
@@ -16,7 +16,7 @@
 }
 .copy-right a{
     text-decoration: none;
-    color: cyan;
+    color: rgb(82, 172, 214);
 }
 .copy-right a:hover{
     color: rgb(223, 205, 205);

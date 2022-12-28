@@ -1,4 +1,9 @@
 .services {
+  box-sizing: border-box;
+  background:linear-gradient(to left, #1f0241, rgb(48, 11, 11));
   display: grid;
+  align-items: center;
+  padding: 70px;
   grid-template-columns: repeat(3, 1fr);
+  
 }

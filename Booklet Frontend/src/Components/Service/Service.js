@@ -1,14 +1,13 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-
 const Service = (props) => {
   const { _id, name, img, author, price } = props.realService
-  const { handleDeleteService } = props
+  const { handleDeleteBook } = props
   return (
     <div>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={img} />
+      <Card classname="serv" style={{ width: '18rem', marginTop:'10vh'}}>
+        <Card.Img variant="top" style={{height: '250px'}} src={img} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>Author:  {author} </Card.Text>
@@ -16,7 +15,7 @@ const Service = (props) => {
           
 
           <Button
-            onClick={() => handleDeleteService(_id)}
+            onClick={() => handleDeleteBook(_id)}
             variant="primary"
             className="ms-4"
           >

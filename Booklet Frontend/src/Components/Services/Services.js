@@ -10,7 +10,7 @@ const Services = () => {
       .then((data) => setServices(data))
   }, [services])
 
-  const handleDeleteService = (id) => {
+  const handleDeleteBook = (id) => {
     const proceed = window.confirm('Are you sure, you want to delete?')
     if (proceed) {
       fetch(`http://localhost:5000/books/${id}`, {
@@ -34,7 +34,7 @@ const Services = () => {
       {services.map((service) => (
         <Service
           realService={service}
-          handleDeleteService={handleDeleteService}
+          handleDeleteBook={handleDeleteBook}
         ></Service>
       ))}
     </div>

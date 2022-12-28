@@ -13,8 +13,8 @@ function Contact(){
     return(
         <div className="contact" id="contact">	
             <div className="contact-form">
-                <h2 className="text-center">Newsletter</h2>
-                <p>Subscribe to our newsletter to get the latest updates on our gadets collection and blog posts.</p>
+                <h2 className="text-center">Comment</h2>
+                <p>Subscribe to our page to get the latest updates on our Book collection and posts.</p>
                 <form>
                     <input type="" placeholder="Your Name" required/>
                     <input type="email" name="" id="" placeholder="Your E-mail" required/>

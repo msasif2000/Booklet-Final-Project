@@ -2,9 +2,10 @@
     width: 100%;
     padding: 10px 10%;
     height: 90vh;
-    background-color: #000;
+    background:linear-gradient(to left, #1f0241, rgb(48, 11, 11));
     scroll-margin-top: 10vh;
-    color: bisque;display: grid;
+    color: bisque;
+	display: grid;
 	grid-template-columns: repeat(2, 2fr);
 	align-items: center;
 	grid-gap: 3rem;
@@ -42,8 +43,8 @@ form textarea{
 }
 .contact-form form .send{
 	display: inline-block;
-	background: #00e8f9;
-	color: gray;
+	background:linear-gradient(to right, #1f0241, #451485);
+	color: rgb(177, 169, 169);
 	font-size: 15px;
 	font-weight: bold;
 	border-radius: 15px;
@@ -90,10 +91,10 @@ form textarea{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background:  #00e8f9;
+	background:  #ffffff;
 	border-radius: 50%;
 	margin: 10px 10px;
-	color: gray;
+	color: rgb(40, 11, 146);
 	text-decoration: none;
 	font-size: 20px;
 	transition: ease .3s;
@@ -110,5 +111,5 @@ form textarea{
 }
 .accept-card i{
     font-size: 24px;
-    color: rgb(124, 202, 216);
+    color: rgb(40, 11, 116);
 }

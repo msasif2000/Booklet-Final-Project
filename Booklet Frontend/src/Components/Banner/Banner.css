@@ -1,0 +1,17 @@
+.car{
+    background:linear-gradient(to right, #1f0241, rgb(48, 11, 11));
+}
+.car img{
+    padding: 40px;
+    border-radius: 50px;
+    margin-top: 10vh;
+    height: 500px;
+    width: auto;
+}
+.car h4{
+    margin-top: 100px;
+    padding:5px;
+    background:linear-gradient(to left, #1f0241, rgb(48, 11, 11));
+    color:rgb(230, 55, 200);
+    
+}

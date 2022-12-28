@@ -14,10 +14,9 @@ function App() {
       
       <Nav/>
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Banner" element={<Banner />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Banner" element={<Banner />} />
         <Route path="/Contact" element={<Contact />} />
-        
         <Route path="/Services" element={<Services />} />
         <Route path="/addService" element={<AddService />} />
         <Route path="/updateService/:serviceId" element={<UpdateService />} />
