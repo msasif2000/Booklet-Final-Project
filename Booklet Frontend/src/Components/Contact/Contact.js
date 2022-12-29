@@ -13,7 +13,7 @@ function Contact(){
     return(
         <div className="contact" id="contact">	
             <div className="contact-form">
-                <h2 className="text-center">Comment</h2>
+                <h2 className="text-center">Feedback</h2>
                 <p>Subscribe to our page to get the latest updates on our Book collection and posts.</p>
                 <form>
                     <input type="" placeholder="Your Name" required/>

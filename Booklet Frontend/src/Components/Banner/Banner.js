@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
 import "./Banner.css"
-import  book1 from "../../imgs/book1.webp"
+import  book1 from "../../imgs/banner1.jpg"
 import  book2 from "../../imgs/book2.webp"
 import  book3 from "../../imgs/book3.webp"
 import  book4 from "../../imgs/book4.webp"

@@ -34,7 +34,7 @@ const AddService = () => {
 
   return (
     <div>
-      <Form style={{marginTop:"15vh"}}onSubmit={handleAddService}>
+      <Form style={{marginTop:"12vh"}}onSubmit={handleAddService}>
         <Form.Group className="mb-3 mt-5" controlId="formBasicEmail">
           <Form.Label>Enter Book Name</Form.Label>
           <Form.Control
@@ -74,5 +74,4 @@ const AddService = () => {
     </div>
   )
 }
-
-export default AddService
+export default AddService;

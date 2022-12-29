@@ -6,7 +6,6 @@ header{
 	right: 0;
 	z-index: 1000;
 	display: flex;
-    margin-bottom: 10vh;
 	align-items: center;
 	justify-content: space-between;
 	background:linear-gradient(to left, #1f0241, rgb(48, 11, 11));
@@ -36,7 +35,7 @@ img{
 	position: absolute;
 	width: 0;
 	height: 2px;
-	background-color: rgb(12, 151, 185);
+	background-color: aqua;
 	left: 0;
 	bottom: 2px;
 	transition: ease .4s;
@@ -44,7 +43,7 @@ img{
 .navbar a:hover:after{
 	width: 100%;
 }
-header.sticky{
+header .sticky{
 	padding: 0px 9%;
 	background:linear-gradient(to right, #1f0241, rgb(48, 11, 11));
 }

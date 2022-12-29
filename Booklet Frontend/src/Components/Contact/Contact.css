@@ -1,9 +1,8 @@
 .contact{
     width: 100%;
-    padding: 10px 10%;
-    height: 90vh;
+    padding: 8vh 10%;
+    height: 80vh;
     background:linear-gradient(to left, #1f0241, rgb(48, 11, 11));
-    scroll-margin-top: 10vh;
     color: bisque;
 	display: grid;
 	grid-template-columns: repeat(2, 2fr);
