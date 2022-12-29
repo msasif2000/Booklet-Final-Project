@@ -7,6 +7,8 @@ import Nav from './Components/Navbar/Nav'
 import Home from './Components/Pages/Home'
 import Services from './Components/Services/Services'
 import UpdateService from './Components/UpdateService/UpdateService'
+import Reviews from './Components/Reviews/Reviews'
+import AddReview from './Components/AddReview/AddReview'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/Services" element={<Services />} />
         <Route path="/addService" element={<AddService />} />
         <Route path="/updateService/:serviceId" element={<UpdateService />} />
+        <Route path="/Reviews" element={<Reviews />} />
+        <Route path="/addReview" element={<AddReview />} />
     
       </Routes>
     </div>

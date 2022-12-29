@@ -20,11 +20,19 @@ async function run() {
     await client.connect()
     const database = client.db('booklet')
     const bookCollection = database.collection('books')
+    const ReviewCollection = database.collection('Reviews')
     console.log('database connected')
     // send books to the database
     app.post('/books', async (req, res) => {
       const book = req.body
       const result = await bookCollection.insertOne(book)
+      console.log(result)
+      res.json(result)
+    })
+    //review to database
+    app.post('/Reviews', async (req, res) => {
+      const Review = req.body
+      const result = await ReviewCollection.insertOne(Review)
       console.log(result)
       res.json(result)
     })
@@ -60,6 +68,12 @@ async function run() {
       res.send(book)
     })
 
+    //comment get
+    app.get('/Reviews', async (req, res) => {
+      const cursor = ReviewCollection.find({})
+      const Review = await cursor.toArray()
+      res.send(Review)
+    })
     // get a single book from book collection
     app.get('/books/:id([0-9a-fA-F]{24})', async (req, res) => {
       const id = req.params.id.trim()
@@ -87,3 +101,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Booklet  on port ${port}`)
 })
+

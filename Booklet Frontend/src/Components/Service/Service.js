@@ -6,7 +6,7 @@ const Service = (props) => {
   const { handleDeleteBook } = props
   return (
     <div>
-      <Card classname="serv" style={{ width: '18rem', marginTop:'10vh'}}>
+      <Card classname="serv" style={{ width: '350px', marginTop:'10vh', background:'bisque'}}>
         <Card.Img variant="top" style={{height: '250px'}} src={img} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>

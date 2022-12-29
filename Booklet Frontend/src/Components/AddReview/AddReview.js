@@ -1,26 +1,24 @@
 import React, { useRef } from 'react'
 import { Button, Form } from 'react-bootstrap'
 
-const AddService = () => {
+const AddReview = () => {
+  const book_nameRef = useRef()
   const nameRef = useRef()
-  const priceRef = useRef()
-  const authorRef = useRef()
-  const imgRef = useRef()
+  const commentRef = useRef()
 
-  const handleAddService = (e) => {
+  const handleAddReview = (e) => {
+    const bookname = book_nameRef.current.value
     const name = nameRef.current.value
-    const price = priceRef.current.value
-    const author = authorRef.current.value
-    const img = imgRef.current.value
+    const comment = commentRef.current.value
 
-    const newService = { name, price, author, img }
+    const newReview = { bookname, name, comment }
 
-    fetch('http://localhost:5000/books', {
+    fetch('http://localhost:5000/Reviews', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(newService),
+      body: JSON.stringify(newReview),
     })
       .then((res) => res.json())
       .then((data) => {
@@ -34,41 +32,32 @@ const AddService = () => {
 
   return (
     <div>
-      <Form style={{marginTop:"12vh"}}onSubmit={handleAddService}>
+      <Form style={{marginTop:"12vh"}}onSubmit={handleAddReview}>
         <Form.Group className="mb-3 mt-5" controlId="formBasicEmail">
           <Form.Label>Enter Book Name</Form.Label>
           <Form.Control
-            ref={nameRef}
+            ref={book_nameRef}
             type="text"
             required
             placeholder="Enter Book Name"
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Enter Book Price</Form.Label>
+          <Form.Label>Enter Your Name</Form.Label>
           <Form.Control
-            ref={priceRef}
+            ref={nameRef}
             type="text"
             required
-            placeholder="Enter Book Price"
+            placeholder="Enter Your Name"
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Enter Author Name</Form.Label>
+          <Form.Label>Drop Your Comment</Form.Label>
           <Form.Control
-            ref={authorRef}
+            ref={commentRef}
             type="text"
             required
-            placeholder="Enter author name"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Enter Service Image Link</Form.Label>
-          <Form.Control
-            ref={imgRef}
-            type="text"
-            required
-            placeholder="Enter Book Image Link"
+            placeholder="Drop Your Comment"
           />
         </Form.Group>
         <Button variant="primary" type="submit">
@@ -78,4 +67,4 @@ const AddService = () => {
     </div>
   )
 }
-export default AddService;
+export default AddReview;

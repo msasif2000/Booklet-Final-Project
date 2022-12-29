@@ -10,6 +10,8 @@ function Nav(){
       <Link to="/Banner">Banner</Link>
 			<Link to="/Services">Books</Link>
       <Link to="/addService">Add Book</Link>
+      <Link to="/Reviews">Reviews</Link>
+      <Link to="/addReview">Add Review</Link>
 			<Link to="/Contact">Contact</Link>
       </div>
       </header>

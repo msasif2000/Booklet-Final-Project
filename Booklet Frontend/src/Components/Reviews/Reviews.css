@@ -1,0 +1,14 @@
+.Reviews{
+    background:linear-gradient(to right, #1f0241, rgb(48, 11, 11));
+    display: grid;
+    align-items: center;
+    padding: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+.title h2{
+    text-align: center;
+    Background: rgb(25, 130, 161);
+    padding:10px
+
+}
+  
