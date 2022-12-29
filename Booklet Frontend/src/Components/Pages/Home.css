@@ -1,0 +1,7 @@
+.Home{
+    background: url(../../imgs/bgs/background14.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+}

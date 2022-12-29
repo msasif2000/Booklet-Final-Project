@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { Button, Form } from 'react-bootstrap'
+import "./AddReview.css"
 
 const AddReview = () => {
   const book_nameRef = useRef()
@@ -31,10 +32,10 @@ const AddReview = () => {
   }
 
   return (
-    <div>
+    <section className='Review'>
       <Form style={{marginTop:"12vh"}}onSubmit={handleAddReview}>
         <Form.Group className="mb-3 mt-5" controlId="formBasicEmail">
-          <Form.Label>Enter Book Name</Form.Label>
+          <Form.Label style={{ color:'bisque', fontSize:'20px'}}>Enter Book Name</Form.Label>
           <Form.Control
             ref={book_nameRef}
             type="text"
@@ -43,7 +44,7 @@ const AddReview = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Enter Your Name</Form.Label>
+          <Form.Label style={{ color:'bisque', fontSize:'20px'}}>Enter Your Name</Form.Label>
           <Form.Control
             ref={nameRef}
             type="text"
@@ -52,19 +53,19 @@ const AddReview = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Drop Your Comment</Form.Label>
-          <Form.Control
+          <Form.Label style={{ color:'bisque', fontSize:'20px'}}>Drop Your Comment</Form.Label>
+          <Form.Control style={{ height:'20vh',}}
             ref={commentRef}
             type="text"
             required
-            placeholder="Drop Your Comment"
+            placeholder="Write Your Feedback"
           />
         </Form.Group>
         <Button variant="primary" type="submit">
           Submit
         </Button>
       </Form>
-    </div>
+    </section>
   )
 }
 export default AddReview;

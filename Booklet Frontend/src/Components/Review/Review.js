@@ -1,5 +1,7 @@
 import React from 'react'
 import {Card } from 'react-bootstrap'
+import "./Review.css"
+
 const Review = (props) => {
   const { bookname, name, comment} = props.realReview
   return (

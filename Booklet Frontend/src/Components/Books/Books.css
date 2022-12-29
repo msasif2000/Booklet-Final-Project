@@ -1,0 +1,21 @@
+.main{
+  margin-top: 10vh;
+  height: 90vh;
+  background: url(../../imgs/bgs/background14.jpg);
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-position: center;
+}
+.title h2{
+  margin-top: 10vh;
+  text-align: center;
+  color: aquamarine;
+  padding:10px
+}
+.services{
+    display: grid;
+    align-items: center;
+    padding: 50px;
+    grid-template-columns: repeat(3, 1fr);
+}

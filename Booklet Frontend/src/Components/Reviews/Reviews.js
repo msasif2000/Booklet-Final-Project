@@ -11,20 +11,16 @@ const Reviews = () => {
 
 
   return (
-    <div>
-        <div className='title'>
+    <section className='main'>
+      <div className='title'>
         <h2>Reviews</h2>
-        </div>
-        <div className="Reviews">
-
-      {reviews.map((review) => (
-        <Review
-          realReview={review}
-        ></Review>
-      ))}
-    
-    </div>
-    </div>
+      </div>
+      <div className="Reviews">
+        {reviews.map((review) => (
+          <Review realReview={review}></Review>
+          ))}
+      </div>
+    </section>
   );
 }
 

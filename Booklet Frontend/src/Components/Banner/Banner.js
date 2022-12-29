@@ -7,6 +7,7 @@ import  banner3 from "../../imgs/banner3.jpg"
 import  banner4 from "../../imgs/banner4.jpg"
 import  banner5 from "../../imgs/book5.webp"
 import  banner6 from "../../imgs/book6.webp"
+
 const Banner = () => {
   return (
     <div>
