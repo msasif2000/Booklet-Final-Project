@@ -64,7 +64,7 @@ const AddBook = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Enter Book Image Link</Form.Label>
+          <Form.Label style={{ color:'bisque', fontSize:'20px'}}>Enter Book Image Link</Form.Label>
           <Form.Control
             ref={imgRef}
             type="text"

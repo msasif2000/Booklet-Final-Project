@@ -5,8 +5,9 @@ import  banner1 from "../../imgs/banner1.jpg"
 import  banner2 from "../../imgs/banner2.jpg"
 import  banner3 from "../../imgs/banner3.jpg"
 import  banner4 from "../../imgs/banner4.jpg"
-import  banner5 from "../../imgs/book5.webp"
-import  banner6 from "../../imgs/book6.webp"
+import  banner5 from "../../imgs/banner5.jpg"
+import  banner6 from "../../imgs/banner6.jpg"
+import  banner7 from "../../imgs/banner7.jpg"
 
 const Banner = () => {
   return (
@@ -56,6 +57,13 @@ const Banner = () => {
             className="d-block w-100"
             src={banner6}
             alt="Sixth slide"   
+          />
+        </Carousel.Item>
+        <Carousel.Item interval={1000}>
+          <img
+            className="d-block w-100"
+            src={banner7}
+            alt="Seventh slide"   
           />
         </Carousel.Item>
       </Carousel>
