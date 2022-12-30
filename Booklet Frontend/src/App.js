@@ -24,7 +24,7 @@ function App() {
         <Route path="/updateBook/:bookId" element={<UpdateBook />} />
         <Route path="/Reviews" element={<Reviews />} />
         <Route path="/addReview" element={<AddReview />} />
-    
+
       </Routes>
     </div>
   );

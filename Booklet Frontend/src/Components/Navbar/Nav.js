@@ -19,8 +19,8 @@ function Nav(){
 }
 export default Nav;
 
-const header = document.querySelector("header");
+const Header = document.querySelector("header");
 
 window.addEventListener ("scroll", function() {
-    header.classList.toggle ("sticky", window.scrollY > 0);
+    Header.classList.toggle ("sticky", window.scrollY > 0);
 });
