@@ -1,0 +1,21 @@
+span{
+    color:red;
+    font-style:bold;
+    text-align:center;
+}
+.title{
+    height: 60px;
+    color: pink;
+}
+
+.func{
+    padding:10px;
+}
+.cls{
+    padding-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	grid-gap: .5rem;
+	align-items: center;
+	cursor: pointer;
+}
