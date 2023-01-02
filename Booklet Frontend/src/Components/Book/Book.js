@@ -8,13 +8,13 @@ const Book = (props) => {
   const { handleDeleteBook } = props
   return (
     <div className='cls'>
-      <Card style={{ width: '350px',height: '700px', marginTop:'5vh', background:'#191919', border:'4px dashed aqua', borderRadius:'10px'}}>
+      <Card style={{ width: '350px',height: '700px', marginTop:'5vh', background:'#191919', border:'3.5px dashed aqua', borderRadius:'10px'}}>
         <Card.Img variant="top" style={{height: 'auto', width:'99.8%',alignContent:'center', border:'2px solid bisque', borderRadius:'10px'}} src={img} />
         <Card.Body>
           <div className='title'><Card.Title>{name}</Card.Title></div>
           <div>
-            <Card.Text className='au_pr'><span>Author:</span>  <span style={{color:'bisque'}}>{author}</span> </Card.Text>
-            <Card.Text><span style={{color:'bisque'}}>Tk</span> <span>{price}</span> <span style={{color:'bisque'}}>Only</span></Card.Text>
+            <Card.Text className='au_pr'><span style={{fontSize:'large'}}>Author:</span>  <span style={{color:'bisque', fontStyle:'bold'}}>{author}</span> </Card.Text>
+            <Card.Text><span style={{color:'bisque'}}>Tk</span> <span style={{fontSize:'large'}}>{price}</span> <span style={{color:'bisque'}}>Only</span></Card.Text>
           </div>
           <div className='func'><Button
             onClick={() => handleDeleteBook(_id)}
