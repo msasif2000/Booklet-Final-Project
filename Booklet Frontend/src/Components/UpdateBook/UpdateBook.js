@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import {useParams} from 'react-router-dom'
+import "./UpdateBook.css"
 
 const UpdateBook = () => {
   const { bookId } = useParams()
@@ -75,7 +76,7 @@ const UpdateBook = () => {
 
   return (
     <div>
-      <Form style={{marginTop: "15vh"}} onSubmit={handleUpdateBook}>
+      <Form className='update' onSubmit={handleUpdateBook}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label style={{ color:'bisque', fontSize:'20px'}}>Book Name</Form.Label>
           <Form.Control
